@@ -1,11 +1,11 @@
 
-import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
-import { router, usePathname } from 'expo-router';
-import { Drawer } from 'expo-router/drawer';
-import { ImageUp, Eclipse, Sun, SunMoon } from 'lucide-react-native';
-import { useState } from 'react';
-import { StyleSheet, View, Image, TouchableOpacity, Text, Alert } from 'react-native';
+import { DrawerContentScrollView } from '@react-navigation/drawer';
 import * as ImagePicker from 'expo-image-picker';
+import { usePathname } from 'expo-router';
+import { Drawer } from 'expo-router/drawer';
+import { Eclipse, ImageUp, Sun, SunMoon } from 'lucide-react-native';
+import { useState } from 'react';
+import { Alert, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 function TabsDrawerContent(props) {
   const pathname = usePathname();
